@@ -1,5 +1,5 @@
 // Define the URL of the Artifactory registry
-def registry = 'https://trial1zy574.jfrog.io/'
+def registry = 'https://trialenvnfo.jfrog.io/'
 
 pipeline {
     agent any
@@ -28,7 +28,7 @@ pipeline {
 
         stage('SonarQube analysis') {
             environment {
-                scannerHome = tool 'saidemy-sonar-scanner'
+                scannerHome = tool 'saidemy-sonar-scannertool'
             }
 
             steps {
